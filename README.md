@@ -7,6 +7,7 @@
 - React
 - Node.js (20.19.0)
 - Vite
+- CSS
 
 ## Creación del proyecto
 
@@ -25,4 +26,13 @@
   - **_App.jsx_**
   - **_main.jsx_** -> aquí solo realizamos unos pequeños ajustes
   - **_index.css_** -> limpiamos todo el CSS
-- 
+
+  ### Formas de escribir CSS
+  
+  - Unos de los temas que más se discuten en _React_ es como escribir el código _CSS_.
+  - Hay muchas opciones, incluso algunas librerías te ofrecen componentes que puedes personalizar.
+  - Frameworks como: _Bootstrap_ o _Tailwindcss_ pueden ser utilizados en _React_.
+  - _CSS PLANO, FRAMEWORKS CSS, SASS, MÓDULOS CSS, COMPONENTES, STYLED COMPONENTS_**
+  - Recomendaciones_
+    - Solo utilizar una forma de generar los estilos _CSS_.
+  - No hay mejores o peores; cualquiera puede realizar desde un proyecto simple hasta uno muy grande.
