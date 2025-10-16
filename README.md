@@ -11,4 +11,9 @@
   - _Install with npm and start now?_ **Yes**
 - Después de terminar la configuración, nos aparece la _URL_ de cómo debemos abrirla en el navegador
   - _http://localhost:5173/_
-- 
+
+## Herramientas y/o tecnologías
+
+- React
+- Node.js (20.19.0)
+- Vite
