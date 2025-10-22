@@ -26,13 +26,27 @@
   - **_App.jsx_**
   - **_main.jsx_** -> aquí solo realizamos unos pequeños ajustes
   - **_index.css_** -> limpiamos todo el CSS
+- El proyecto lo levantamos con:
+  - **_npm run dev_**
 
-  ### Formas de escribir CSS
-  
-  - Unos de los temas que más se discuten en _React_ es como escribir el código _CSS_.
-  - Hay muchas opciones, incluso algunas librerías te ofrecen componentes que puedes personalizar.
-  - Frameworks como: _Bootstrap_ o _Tailwindcss_ pueden ser utilizados en _React_.
-  - _CSS PLANO, FRAMEWORKS CSS, SASS, MÓDULOS CSS, COMPONENTES, STYLED COMPONENTS_**
-  - Recomendaciones_
-    - Solo utilizar una forma de generar los estilos _CSS_.
-  - No hay mejores o peores; cualquiera puede realizar desde un proyecto simple hasta uno muy grande.
+### Formas de escribir CSS
+
+- Unos de los temas que más se discuten en _React_ es como escribir el código _CSS_.
+- Hay muchas opciones, incluso algunas librerías te ofrecen componentes que puedes personalizar.
+- Frameworks como: _Bootstrap_ o _Tailwindcss_ pueden ser utilizados en _React_.
+- _CSS PLANO, FRAMEWORKS CSS, SASS, MÓDULOS CSS, COMPONENTES, STYLED COMPONENTS_**
+- Recomendaciones_
+  - Solo utilizar una forma de generar los estilos _CSS_.
+- No hay mejores o peores; cualquiera puede realizar desde un proyecto simple hasta uno muy grande.
+
+### Componentes
+
+- Un componente es una función de JS.
+- Es tener código: _HTML & JS_ en un solo archivo.
+- _React_ utiliza componentes para la creación de aplicaciones y sitios web.
+- Un componente puede tener la extensión:
+  - **.jsx - .tsx - .js**
+- También es posible pero lo recomendado son las 2 primeras opciones.
+- Un componente usualmente tiene 2 propósitos: ser **re-utilizable** o **separa la funcionalidad**; si se cumplen ambas es aún mejor.
+- Siempre tiene que tener un: _return()_, que es lo que se muestra en pantalla.
+- 

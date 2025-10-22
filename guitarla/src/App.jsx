@@ -1,9 +1,10 @@
-
+import Header from "./components/Header";
 
 function App() {
-
   return (
     <>
+      <Header />
+      
       <header class="py-5 header">
         <div class="container-xl">
           <div class="row justify-content-center justify-content-md-between">
@@ -342,4 +343,4 @@ function App() {
   );
 }
 
-export default App
+export default App;
