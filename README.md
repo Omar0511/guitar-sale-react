@@ -95,4 +95,18 @@
   - _useSynExternalStore_
 - Creación de _Hooks_ propios:
   - También es posible crear tus propios _Hooks_, de esta forma podrás separar tu código en funciones reutilizables y sacar todo el beneficio de lo que _React_ ofrece.
+
+## STATE
+
+- El estado es una variable con información relevante en nuestra aplicación de _React_, algunas veces el _state_ pertenece a un componente en específico o algunas veces compartirlo a lo largo de diferentes componentes.
+- Piensa en el _state_ como el resultado de alguna interacción en el sitio o aplicación web: el listado de clientes, la imagen a mostrar en una galería, si un usuario esta autenticado o no.
+- El _state_ es creado con el _hook: **useState()**_
+- Ejemplo
+  - **import { useState } from "react"**
+  - **const [customer, setCUstomer] = useState( {} );**
+  - **const [customer, setCUstomer] = useState( 0 );**
+  - **const [customer, setCUstomer] = useState( [] );**
+  - **const [customer, setCUstomer] = useState( false );**
+- Cada que tu _state_ cambia, tu aplicación de _React_ va a renderizar y actualizarse con esos cambios, no es necesario hacer nada más y tu interfaz siempre estará sincronizada con el _state_.
+- Para modificar el _state_, se utiliza la función que extraemos cuando declaramos el _state_ en nuestro componente.
 - 
