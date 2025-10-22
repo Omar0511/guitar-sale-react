@@ -109,4 +109,9 @@
   - **const [customer, setCUstomer] = useState( false );**
 - Cada que tu _state_ cambia, tu aplicación de _React_ va a renderizar y actualizarse con esos cambios, no es necesario hacer nada más y tu interfaz siempre estará sincronizada con el _state_.
 - Para modificar el _state_, se utiliza la función que extraemos cuando declaramos el _state_ en nuestro componente.
+
+  ### Reglas
+
+  - Los _Hooks_ se colocan en la parte superior de tus componentes de _React_.
+  - No se deben colocar dentro de condicionales, tampoco después de un _return_.
 - 

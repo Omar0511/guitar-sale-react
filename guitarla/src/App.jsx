@@ -6,7 +6,9 @@ import Header from "./components/Header";
 function App() {
   // State
   const [auth, setAuth] = useState(false);
-  console.log(auth);
+  // console.log(auth);
+  const [total, setTotal] = useState(0);
+  const [car, setCar] = useState([]);
 
   return (
     <>
