@@ -66,4 +66,7 @@
   - Deberán finalizar con: **/>**.
   - Cada componente debe tener un _return_.
   - En este _return_ deber haber máximo un solo elemento en el nivel máximo.
-  - 
+
+### Notas
+
+- En _React_, **class** se debe cambiar por: _className_.
