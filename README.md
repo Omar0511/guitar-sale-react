@@ -70,3 +70,29 @@
 ### Notas
 
 - En _React_, **class** se debe cambiar por: _className_.
+
+## HOOKS
+
+- Son la base de _React_.
+- Los _Hooks_ te permiten utilizar las diferentes funciones de _React_ en tus componentes, _React_ tiene una serie de _Hooks_ pero también puedes crear los tuyos.
+- Los _Hooks_ están disponibles desde la versión: **16.8**, previo a ello se tenían que crear _Classes_ para crear y modificar el _STATE_, con los _Hooks_ no es necesario.
+- Los _Hooks_ se dividen en:
+  - Básicos
+  - Adicionales
+- Categorías de _Hooks_
+  - _useState_
+  - _useEffect_
+  - _useReducer_
+  - _useCallback_
+  - _useMemo_
+  - _useRef_
+  - _useImperativeHandle_
+  - _useCLayoutEffect_
+  - _useCInsertionEffect_
+  - _useTransition_
+  - _useDeferredValue_
+  - _useId_
+  - _useSynExternalStore_
+- Creación de _Hooks_ propios:
+  - También es posible crear tus propios _Hooks_, de esta forma podrás separar tu código en funciones reutilizables y sacar todo el beneficio de lo que _React_ ofrece.
+- 
