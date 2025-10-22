@@ -19,9 +19,10 @@ export default function Header() {
     // </React.Fragment>
 
     // Otra forma de evitar el div extra sin importar Fragment
-    <>
-      <h1>Desde Header Fragment...</h1>
-    </>
+    // <>
+    //   <h1>Desde Header Fragment...</h1>
+    // </>
+    <h1>ola</h1>
   )
   
 
