@@ -49,4 +49,21 @@
 - También es posible pero lo recomendado son las 2 primeras opciones.
 - Un componente usualmente tiene 2 propósitos: ser **re-utilizable** o **separa la funcionalidad**; si se cumplen ambas es aún mejor.
 - Siempre tiene que tener un: _return()_, que es lo que se muestra en pantalla.
-- 
+
+  ## JSX
+  
+  - Es una extensión del lenguaje desarrollada por:
+    - _Meta (Facebook)_
+  - para _React_.
+  - Parece _JS_ pero muestra código de _HTML_ y básicamente es un lenguaje de _Templates/Vistas_ que muestra el _HTML_ pero tiene todas las funciones de _Javascript_.
+  - Una vez compilado son archivos: _JS_ con funciones y objetos.
+  
+  ### Reglas JSX
+
+  - A diferencia de _HTML_, que no es estricto, en _JSX_ si un elemtno _HTML_ tiene una etiqueta de apertura, deberás tener también la de cierre.
+  - Las etiquetas de solo apertura como: 
+    - **<link>, <img> <input>**
+  - Deberán finalizar con: **/>**.
+  - Cada componente debe tener un _return_.
+  - En este _return_ deber haber máximo un solo elemento en el nivel máximo.
+  - 
