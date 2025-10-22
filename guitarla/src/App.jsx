@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import Guitar from "./components/Guitar";
 import Header from "./components/Header";
@@ -9,6 +9,14 @@ function App() {
   // console.log(auth);
   const [total, setTotal] = useState(0);
   const [car, setCar] = useState([]);
+
+  useEffect(() => {
+    console.log("Componente montado");
+  }, [auth]);
+
+  setTimeout(() => {
+    setAuth(true);
+  }, 3000);
 
   return (
     <>

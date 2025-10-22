@@ -114,4 +114,23 @@
 
   - Los _Hooks_ se colocan en la parte superior de tus componentes de _React_.
   - No se deben colocar dentro de condicionales, tampoco después de un _return_.
+
+## EFFECT
+
+- _useEffect_
+- Después de un _useState_ es el más utilizado.
+- _useEffect_ siempre es un _callback_, que dependiendo como lo declares va a realizar diferentes acciones.
+- Es el sustituto de lo que antes era _componentDidMount()_ y _componentDidUpdate()_.
+- Ejemplo
+  - **import { useEffect } from "react"**
+  - **useEffect( () =>{ console.log('El componente está listo'); }), []);**
+- La parte final: **[]**, indica que se va ejecutar cuando el componente este listo.
+- Si le pasamos un valor, por ejemplo, una variable o un _state_, se va ejecutar cada que cambie el valor o el resultado de lo que le estamos pasando.
 - 
+
+  ### Usos
+
+  - Al ejectuarse automáticamente cuando el componente esta listo, es un buen lugar para colocar código para consultar una _API_ o _LOcalStorage_.
+  - Debido a que le podemos pasar una dependencia y estar escuchando por los cambios que sucedan en una variable, puede actualzar el componente cuando ese cambio suceda.
+  - Dependiendo del valor que pasemos en el array de dependencias (o no pasemos nada), el _hook_ de _useEffect_ hará algo diferente.
+
