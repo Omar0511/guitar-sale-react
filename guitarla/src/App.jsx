@@ -1,22 +1,27 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 
 import Guitar from "./components/Guitar";
 import Header from "./components/Header";
+import { db } from "./data/db";
 
 function App() {
   // State
-  const [auth, setAuth] = useState(false);
+  // const [auth, setAuth] = useState(false);
   // console.log(auth);
-  const [total, setTotal] = useState(0);
-  const [car, setCar] = useState([]);
+  // const [total, setTotal] = useState(0);
+  // const [car, setCar] = useState([]);
 
-  useEffect(() => {
-    console.log("Componente montado");
-  }, [auth]);
+  // useEffect(() => {
+  //   console.log("Componente montado");
+  // }, [auth]);
 
-  setTimeout(() => {
-    setAuth(true);
-  }, 3000);
+  // setTimeout(() => {
+  //   setAuth(true);
+  // }, 3000);
+
+  // console.log(db);
+
+  const [data, setData] = useState(db);
 
   return (
     <>
