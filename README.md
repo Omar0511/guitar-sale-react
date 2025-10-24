@@ -134,3 +134,20 @@
   - Debido a que le podemos pasar una dependencia y estar escuchando por los cambios que sucedan en una variable, puede actualzar el componente cuando ese cambio suceda.
   - Dependiendo del valor que pasemos en el array de dependencias (o no pasemos nada), el _hook_ de _useEffect_ hará algo diferente.
 
+## STATEMENTS
+
+- Una app de _JS_ es una serie de _statements_, cada _statement_ es una instrucción para hacer algo.
+- Algunos _Statements_ son:
+  - Creación de variables.
+  - Código condicionales con _if_.
+  - Lanzar errores con _throw new Error()_.
+  - Iterar con _While - For_. 
+
+## EXPRESSIONS
+
+- Una expresión es algo que produce un valor.
+- Algunas _EXpressions_ son_
+  - Ternarios.
+  - Utilizar un _Array Method_ que genere un nuevo _Array_.
+  - _.map_ que genera un nuevo _array_ a diferencia de _forEach_.
+- 
