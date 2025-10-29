@@ -150,4 +150,21 @@
   - Ternarios.
   - Utilizar un _Array Method_ que genere un nuevo _Array_.
   - _.map_ que genera un nuevo _array_ a diferencia de _forEach_.
+
+## PROPS
+
+- Compartir información entre Componentes.
+- Los componentes de _React_ utilizan _Props_ para comunicarse entre ellos.
+- Puedes pasarle información de un componente padre al hijo por medio de estos _Props_.
+- Los _props_ se parecen a los atributos en _HTML_, pero puedes pasarle _arrays_, objetos o funciones.
+- Lops _Props_ se pasan del padre al hijo, nunca se pueden pasar del hijo al padre.
+- Ejemplo
+  - **_ <Header nombreProp= {datos/state o funciones} />_**
+- Si tienes un _state_ que se va a pasar por diferentes componentes, lo mejor es colocarlo en el archivo principal.
+- Cada nivel de componentes deberá tomar y pasar por el _Prop_ hacia otros componentes, tecnologías como:
+  - Redux
+  - Zustand
+  - Jotai
+  - Context
+- evitan tener que hacerlo de esta forma.
 - 
