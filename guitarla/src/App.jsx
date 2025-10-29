@@ -24,6 +24,12 @@ function App() {
 
   const [cart, setCart] = useState([]);
 
+  function addToCart(item) {
+    console.log("Agregando al carrito");
+
+    setCart((prevCart) => [...prevCart, item]);
+  }
+
   return (
     <>
       <Header />
@@ -39,6 +45,7 @@ function App() {
               guitar={guitar}
               setCart={setCart}
               cart={cart}
+              addToCart={addToCart}
             />
           ))}
         </div>

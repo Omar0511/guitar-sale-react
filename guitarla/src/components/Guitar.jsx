@@ -1,7 +1,7 @@
 // export default function Guitar(props) {
 // export default function Guitar({price}) {
 // export default function Guitar({ guitar, setCart, cart }) {
-export default function Guitar({ guitar, setCart}) {
+export default function Guitar({ guitar, setCart, addToCart}) {
   // console.log(props);
   // console.log(props.price);
   // console.log(props.auth);
@@ -62,7 +62,9 @@ export default function Guitar({ guitar, setCart}) {
 
           // onClick={() => setCart([...cart, guitar])}
 
-          onClick={() => setCart(prevCart => [...prevCart, guitar])}
+          // onClick={() => setCart(prevCart => [...prevCart, guitar])}
+
+          onClick={() => addToCart(guitar)}
         >
           Agregar al Carrito
         </button>
