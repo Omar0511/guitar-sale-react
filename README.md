@@ -114,6 +114,9 @@
 
   - Los _Hooks_ se colocan en la parte superior de tus componentes de _React_.
   - No se deben colocar dentro de condicionales, tampoco después de un _return_.
+  - Los _STATES_ no son mutables, es decir; no se pueden modificar directamente, antes de modificarlo, debemos validar que no afecte el _STATE_.
+  - Podemos tomar como base y validar que si y que no, nos afecta y aplica mutabilidad.
+  - **https://doesitmutate.xyz/**
 
 ## EFFECT
 
