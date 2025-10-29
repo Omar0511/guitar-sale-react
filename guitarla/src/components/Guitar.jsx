@@ -1,6 +1,7 @@
 // export default function Guitar(props) {
 // export default function Guitar({price}) {
-export default function Guitar({ guitar }) {
+// export default function Guitar({ guitar, setCart, cart }) {
+export default function Guitar({ guitar, setCart}) {
   // console.log(props);
   // console.log(props.price);
   // console.log(props.auth);
@@ -8,11 +9,13 @@ export default function Guitar({ guitar }) {
 
   const { id, name, image, description, price } = guitar;
 
-  const handleClick = (id) => {
-    // console.log(`Agregando guitarra ${id} al carrito`);
-    // console.log("Agregando guitarra " + id + " al carrito");
-    console.log(id);
-  };
+  // const handleClick = (guitar) => {
+  //   // console.log(`Agregando guitarra ${id} al carrito`);
+  //   // console.log("Agregando guitarra " + id + " al carrito");
+  //   // console.log(id);
+  //   // console.log(guitar);
+  //   setCart([...cart, guitar]);
+  // };
 
   return (
     <div className="col-md-6 col-lg-4 my-4 row align-items-center">
@@ -55,7 +58,11 @@ export default function Guitar({ guitar }) {
           // onClick={() => handleClick(id)}
 
           // Cuando se tienen parametros, se usa una funcion flecha
-          onClick={() => handleClick(guitar)}
+          // onClick={() => handleClick(guitar)}
+
+          // onClick={() => setCart([...cart, guitar])}
+
+          onClick={() => setCart(prevCart => [...prevCart, guitar])}
         >
           Agregar al Carrito
         </button>

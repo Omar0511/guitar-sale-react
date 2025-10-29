@@ -22,6 +22,8 @@ function App() {
   const [data, setData] = useState(db);
   console.log(data);
 
+  const [cart, setCart] = useState([]);
+
   return (
     <>
       <Header />
@@ -35,6 +37,8 @@ function App() {
               // price={100}
               key={guitar.id} // Siempre que usamos un map, hay que poner un key unico
               guitar={guitar}
+              setCart={setCart}
+              cart={cart}
             />
           ))}
         </div>
