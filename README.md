@@ -167,4 +167,15 @@
   - Jotai
   - Context
 - evitan tener que hacerlo de esta forma.
+
+## EVENTOS
+
+- La forma en que _React_ maneja los eventos es muy similar a como lo hace _Javascript_ de forma nativa con algunos cambios.
+- Los eventos son _camelCase_, es decir en lugar de _onchange_ se utiliza _onChange_, en lugar de: _onclick_ se usa: _onClick_.
+- También a diferencia de: _JS_ y _HTML_, donde se coloca el nombre de la función en un _string_ en _React (JSX)_ se utiliza la función entre llaves {}.
+- Ejemplos
+  - **_HTML_**
+    - <button onclick="llamarEvento()">Ejemplo eventos</button>
+  - **_JSX_**
+    - <button onClick={llamarEvento()}>Ejemplo eventos JSX</button>
 - 
