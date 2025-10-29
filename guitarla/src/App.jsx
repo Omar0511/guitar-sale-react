@@ -31,9 +31,15 @@ function App() {
     // console.log(itemExists);
 
     if (itemExists >= 0) {
-      console.log("Ya existe");
+      // console.log("Ya existe");
+
+      const updateCart = [...cart];
+
+      updateCart[itemExists].quantity++;
+
+      setCart(updateCart);
     } else {
-      console.log("No existe, agreganod...");
+      // console.log("No existe, agreganod...");
 
       item.quantity = 1;
 
