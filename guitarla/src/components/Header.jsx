@@ -8,6 +8,9 @@ import Guitar from "./Guitar";
 export default function Header({cart}) {
   // const name = 'probando';
 
+  // State derivado
+  const isEmpty = () => cart.length === 0;
+
   return (
     // <h1>Desde Header... {name}</h1>
 
@@ -46,7 +49,8 @@ export default function Header({cart}) {
               />
 
               <div id="carrito" className="bg-white p-3">
-                {cart.length === 0 ? (
+                {/* {cart.length === 0 ? ( */}
+                {isEmpty() (
                   <p className="text-center">El carrito esta vacio</p>                  
                 ) : (
                   <table className="w-100 table">
