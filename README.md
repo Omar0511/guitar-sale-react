@@ -181,4 +181,9 @@
     - <button onclick="llamarEvento()">Ejemplo eventos</button>
   - **_JSX_**
     - <button onClick={llamarEvento()}>Ejemplo eventos JSX</button>
+
+## USEMEMO
+
+- Simplifica los _TEMPLATES_.
+- Es un _HOOKS_ enfocado al _performance_.
 - 

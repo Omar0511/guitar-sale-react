@@ -2,6 +2,8 @@
 
 import Guitar from "./Guitar";
 
+import { useMemo } from "react";
+
 // Otra forma de importar Fragment
 // import React from "react";
 
@@ -9,8 +11,11 @@ export default function Header({ cart }) {
   // const name = 'probando';
 
   // State derivado
-  const isEmpty = () => cart.length === 0;
-  const cartTotal = () => cart.reduce( (total, item) => total + (item.quantity * item.price), 0 );
+  // const isEmpty = () => cart.length === 0;
+  // Se ejecuta cada vez que hay un cambio en el componente -> useMemo
+  const isEmpty = useMemo(() => cart.length === 0, [cart]);
+  // Se ejecutara cada vez que carrito cambie
+  const cartTotal = useMemo(() => cart.reduce((total, item) => total + (item.quantity * item.price), 0), [cart]);
 
   return (
     // <h1>Desde Header... {name}</h1>
@@ -51,7 +56,8 @@ export default function Header({ cart }) {
 
               <div id="carrito" className="bg-white p-3">
                 {/* {cart.length === 0 ? ( */}
-                {isEmpty() ? (
+                {/* {isEmpty() ? ( */}
+                {isEmpty ? (
                   <p className="text-center">El carrito esta vacio</p>
                 ) : (
                   <>
@@ -103,7 +109,8 @@ export default function Header({ cart }) {
                     </table>
 
                     {/* <p className="text-end">Total pagar: <span className="fw-bold">$899</span> </p> */}
-                      <p className="text-end">Total pagar: <span className="fw-bold">${cartTotal()}</span> </p>
+                      {/* <p className="text-end">Total pagar: <span className="fw-bold">${cartTotal()}</span> </p> */}
+                      <p className="text-end">Total pagar: <span className="fw-bold">${cartTotal}</span> </p>
                   </>
                 )}
 
