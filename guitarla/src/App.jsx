@@ -49,10 +49,17 @@ function App() {
 
   }
 
+  function removeFromCart(id) {
+    // console.log("Eliminando del carrito", id);
+
+    setCart(prevCart => prevCart.filter(item => item.id !== id));
+  }
+
   return (
     <>
       <Header
         cart={cart}
+        removeFromCart={removeFromCart}
       />
 
       <main className="container-xl mt-5">

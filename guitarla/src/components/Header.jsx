@@ -7,7 +7,7 @@ import { useMemo } from "react";
 // Otra forma de importar Fragment
 // import React from "react";
 
-export default function Header({ cart }) {
+export default function Header({ cart, removeFromCart }) {
   // const name = 'probando';
 
   // State derivado
@@ -15,7 +15,10 @@ export default function Header({ cart }) {
   // Se ejecuta cada vez que hay un cambio en el componente -> useMemo
   const isEmpty = useMemo(() => cart.length === 0, [cart]);
   // Se ejecutara cada vez que carrito cambie
-  const cartTotal = useMemo(() => cart.reduce((total, item) => total + (item.quantity * item.price), 0), [cart]);
+  const cartTotal = useMemo(
+    () => cart.reduce((total, item) => total + item.quantity * item.price, 0),
+    [cart]
+  );
 
   return (
     // <h1>Desde Header... {name}</h1>
@@ -99,7 +102,11 @@ export default function Header({ cart }) {
                               </button>
                             </td>
                             <td>
-                              <button className="btn btn-danger" type="button">
+                              <button
+                                className="btn btn-danger"
+                                type="button"
+                                onClick={() => removeFromCart(guitar.id)}
+                              >
                                 X
                               </button>
                             </td>
@@ -109,12 +116,16 @@ export default function Header({ cart }) {
                     </table>
 
                     {/* <p className="text-end">Total pagar: <span className="fw-bold">$899</span> </p> */}
-                      {/* <p className="text-end">Total pagar: <span className="fw-bold">${cartTotal()}</span> </p> */}
-                      <p className="text-end">Total pagar: <span className="fw-bold">${cartTotal}</span> </p>
+                    {/* <p className="text-end">Total pagar: <span className="fw-bold">${cartTotal()}</span> </p> */}
+                    <p className="text-end">
+                      Total pagar: <span className="fw-bold">${cartTotal}</span>{" "}
+                    </p>
                   </>
                 )}
 
-                <button className="btn btn-dark w-100 mt-3 p-2">Vaciar Carrito</button>
+                <button className="btn btn-dark w-100 mt-3 p-2">
+                  Vaciar Carrito
+                </button>
               </div>
             </div>
           </nav>
