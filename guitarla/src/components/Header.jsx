@@ -7,7 +7,12 @@ import { useMemo } from "react";
 // Otra forma de importar Fragment
 // import React from "react";
 
-export default function Header({ cart, removeFromCart }) {
+export default function Header({
+  cart,
+  removeFromCart,
+  increaseQuaintity,
+  decreaseQuaintity,
+}) {
   // const name = 'probando';
 
   // State derivado
@@ -92,12 +97,20 @@ export default function Header({ cart, removeFromCart }) {
                             <td className="fw-bold">{guitar.price}</td>
 
                             <td className="flex align-items-start gap-4">
-                              <button type="button" className="btn btn-dark">
+                              <button
+                                type="button"
+                                className="btn btn-dark"
+                                onClick={() => decreaseQuaintity(guitar.id)}
+                              >
                                 -
                               </button>
                               {/* 1 */}
                               {guitar.quantity}
-                              <button type="button" className="btn btn-dark">
+                              <button
+                                type="button"
+                                className="btn btn-dark"
+                                onClick={() => increaseQuaintity(guitar.id)}
+                              >
                                 +
                               </button>
                             </td>
