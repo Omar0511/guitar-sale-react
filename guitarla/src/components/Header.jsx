@@ -12,6 +12,7 @@ export default function Header({
   removeFromCart,
   increaseQuaintity,
   decreaseQuaintity,
+  clearCart,
 }) {
   // const name = 'probando';
 
@@ -136,7 +137,7 @@ export default function Header({
                   </>
                 )}
 
-                <button className="btn btn-dark w-100 mt-3 p-2">
+                <button className="btn btn-dark w-100 mt-3 p-2" onClick={clearCart}>
                   Vaciar Carrito
                 </button>
               </div>

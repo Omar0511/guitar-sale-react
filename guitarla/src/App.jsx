@@ -37,6 +37,8 @@ function App() {
       // console.log("Ya existe");
 
       if (cart[itemExists].quantity >= MAX_ITEMS) {
+        return;
+      }
 
       const updateCart = [...cart];
 
@@ -82,6 +84,10 @@ function App() {
     setCart(updateCart);
   }
 
+  function clearCart() {
+    setCart([]);
+  }
+
   return (
     <>
       <Header
@@ -89,6 +95,7 @@ function App() {
         removeFromCart={removeFromCart}
         increaseQuaintity={increaseQuaintity}
         decreaseQuaintity={decreaseQuaintity}
+        clearCart={clearCart}
       />
 
       <main className="container-xl mt-5">
