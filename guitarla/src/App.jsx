@@ -36,6 +36,8 @@ function App() {
     if (itemExists >= 0) {
       // console.log("Ya existe");
 
+      if (cart[itemExists].quantity >= MAX_ITEMS) {
+
       const updateCart = [...cart];
 
       updateCart[itemExists].quantity++;
