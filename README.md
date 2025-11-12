@@ -7,7 +7,7 @@
 - React
 - Node.js (20.19.0)
 - Vite
-- CSS
+- TailwindCSS
 
 ## Creación del proyecto
 
@@ -28,6 +28,10 @@
   - **_index.css_** -> limpiamos todo el CSS
 - El proyecto lo levantamos con:
   - **_npm run dev_**
+- Una vez que terminamos el proyecto, ejecutamos el comando:
+  - **_npm run build_**
+- Con esto nos aparecerá la carpeta de:
+  - _dist_ 
 
 ### Formas de escribir CSS
 
@@ -186,4 +190,3 @@
 
 - Simplifica los _TEMPLATES_.
 - Es un _HOOKS_ enfocado al _performance_.
-- 
