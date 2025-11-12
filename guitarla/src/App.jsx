@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from "react";
+import { useState, useEffect } from "react";
 
 import Guitar from "./components/Guitar";
 import Header from "./components/Header";
@@ -27,6 +27,10 @@ function App() {
   const MAX_ITEMS = 5;
   const MIN_ITEMS = 1;
 
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
+
   function addToCart(item) {
     console.log("Agregando al carrito");
 
@@ -53,7 +57,6 @@ function App() {
       // setCart((prevCart) => [...prevCart, item]);
       setCart([...cart, item]);
     }
-
   }
 
   function removeFromCart(id) {
