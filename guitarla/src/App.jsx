@@ -19,16 +19,22 @@ function App() {
   //   setAuth(true);
   // }, 3000);
 
+  // const initialCart = () => {
+  //   const localStorageCart = localStorage.getItem('cart');
+  //   return localStorageCart ? JSON.parse(localStorageCart) : [];
+  // };
   const initialCart = () => {
-    const localStorageCart = localStorage.getItem("cart");
-    return localStorageCart ? JSON.parse(localStorageCart) : [];
+    const localStorageCart = localStorage.getItem('cart');
+    const parsed = localStorageCart ? JSON.parse(localStorageCart) : [];
+    // filtra nulls o elementos incompletos
+    return parsed.filter((item) => item && item.id && item.price);
   };
 
   const [data, setData] = useState(db);
   // console.log(data);
 
   // const [cart, setCart] = useState([]);
-  const [cart, setCart] = useState([initialCart]);
+  const [cart, setCart] = useState(initialCart);
 
   const MAX_ITEMS = 5;
   const MIN_ITEMS = 1;
