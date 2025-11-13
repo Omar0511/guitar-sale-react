@@ -100,6 +100,27 @@
 - Creación de _Hooks_ propios:
   - También es posible crear tus propios _Hooks_, de esta forma podrás separar tu código en funciones reutilizables y sacar todo el beneficio de lo que _React_ ofrece.
 
+  ### Creación de _HOOKS_ propios
+
+  - Existe una gran ventaja de crear tus propios _HOOKS_ y es la de incorporar _State_ y otros _Hooks_ de _React_ a tu propio código para poderlo re-utilizar entre otros proyectos.
+  - Otra gran ventaja es la de organizar tu código, de esa forma el _hook_ se encarga de toda la lógica del _state_ mientras que tus componentes solo de mostrar la información.
+
+    #### Ventjas
+
+    - Tu código personalizado tendrá todas las ventjas de _React_ como son: 
+      - state
+      - effects
+      - integrar otros _hooks_
+      - performance
+    - Re-utilizable en otros proyectos.
+    - Fácil de escribir pruebas.
+
+    #### ¿Cómo crearlos?
+
+    - Los _hooks_ son funciones de _JavaScript_ pero tienen algunas reglas.
+    - Tus _hooks_ deben seguir la convención de _React_, **use{hook}**, de esta forma _React_ escanea tu código en búsqueda de posibles problemas con las reglas de los _Hooks_.
+    - Un _Hook_ ususalmente solo debe tener lógica y no presentación (para eso es un componente).
+
 ## STATE
 
 - El estado es una variable con información relevante en nuestra aplicación de _React_, algunas veces el _state_ pertenece a un componente en específico o algunas veces compartirlo a lo largo de diferentes componentes.
