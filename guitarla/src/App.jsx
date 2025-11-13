@@ -52,7 +52,6 @@ function App() {
               // price={100}
               key={guitar.id} // Siempre que usamos un map, hay que poner un key unico
               guitar={guitar}
-              cart={cart}
               addToCart={addToCart}
             />
           ))}

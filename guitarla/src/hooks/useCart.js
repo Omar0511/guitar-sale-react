@@ -11,20 +11,18 @@ export const useCart = () => {
   // return { auth, carrito };
 
   const initialCart = () => {
-    const localStorageCart = localStorage.getItem("cart");
+    const localStorageCart = localStorage.getItem('cart');
     return localStorageCart ? JSON.parse(localStorageCart) : [];
   };
 
-  const [data, setData] = useState(db);
+  const [data] = useState(db);
   // console.log(data);
 
   // const [cart, setCart] = useState([]);
-  // const [cart, setCart] = useState(initialCart);
-  const [cart, setCart] = useState(() => initialCart());
+  const [cart, setCart] = useState(initialCart);
 
-
-  const MAX_ITEMS = 5;
   const MIN_ITEMS = 1;
+  const MAX_ITEMS = 5;
 
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart));
