@@ -1,4 +1,4 @@
-import { useState, useEffect, use } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { db } from "../data/db";
 
 export const useCart = () => {
@@ -11,7 +11,7 @@ export const useCart = () => {
   // return { auth, carrito };
 
   const initialCart = () => {
-    const localStorageCart = localStorage.getItem('cart');
+    const localStorageCart = localStorage.getItem("cart");
     return localStorageCart ? JSON.parse(localStorageCart) : [];
   };
 
@@ -88,6 +88,18 @@ export const useCart = () => {
     setCart([]);
   }
 
+  // const name = 'probando';
+
+  // State derivado
+  // const isEmpty = () => cart.length === 0;
+  // Se ejecuta cada vez que hay un cambio en el componente -> useMemo
+  const isEmpty = useMemo(() => cart.length === 0, [cart]);
+  // Se ejecutara cada vez que carrito cambie
+  const cartTotal = useMemo(
+    () => cart.reduce((total, item) => total + item.quantity * item.price, 0),
+    [cart]
+  );
+
   return {
     data,
     cart,
@@ -96,6 +108,8 @@ export const useCart = () => {
     increaseQuaintity,
     decreaseQuaintity,
     clearCart,
+    isEmpty,
+    cartTotal,
   };
 };
 

@@ -1,8 +1,7 @@
 // import { Fragment } from "react";
 
+import { useCart } from "../hooks/useCart";
 import Guitar from "./Guitar";
-
-import { useMemo } from "react";
 
 // Otra forma de importar Fragment
 // import React from "react";
@@ -13,18 +12,9 @@ export default function Header({
   increaseQuaintity,
   decreaseQuaintity,
   clearCart,
+  isEmpty,
+  cartTotal,
 }) {
-  // const name = 'probando';
-
-  // State derivado
-  // const isEmpty = () => cart.length === 0;
-  // Se ejecuta cada vez que hay un cambio en el componente -> useMemo
-  const isEmpty = useMemo(() => cart.length === 0, [cart]);
-  // Se ejecutara cada vez que carrito cambie
-  const cartTotal = useMemo(
-    () => cart.reduce((total, item) => total + item.quantity * item.price, 0),
-    [cart]
-  );
 
   return (
     // <h1>Desde Header... {name}</h1>
