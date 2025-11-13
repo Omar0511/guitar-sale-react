@@ -19,7 +19,9 @@ export const useCart = () => {
   // console.log(data);
 
   // const [cart, setCart] = useState([]);
-  const [cart, setCart] = useState([initialCart]);
+  // const [cart, setCart] = useState(initialCart);
+  const [cart, setCart] = useState(() => initialCart());
+
 
   const MAX_ITEMS = 5;
   const MIN_ITEMS = 1;
