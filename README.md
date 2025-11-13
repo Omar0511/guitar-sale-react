@@ -121,6 +121,12 @@
     - Tus _hooks_ deben seguir la convención de _React_, **use{hook}**, de esta forma _React_ escanea tu código en búsqueda de posibles problemas con las reglas de los _Hooks_.
     - Un _Hook_ ususalmente solo debe tener lógica y no presentación (para eso es un componente).
 
+- Por convención creamos una carpeta en _src_:
+  - **hooks**
+  - El nombre del archivo del _hook_ puede llamar como:
+    - **useNombreArchivo** -> ejemplo: _useCart.js_
+    -  **archivo.js** -> ejemplo: _cart.js_
+
 ## STATE
 
 - El estado es una variable con información relevante en nuestra aplicación de _React_, algunas veces el _state_ pertenece a un componente en específico o algunas veces compartirlo a lo largo de diferentes componentes.

@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, use } from "react";
 
 import Guitar from "./components/Guitar";
 import Header from "./components/Header";
 import { db } from "./data/db";
+import { useCart } from "./hooks/useCart";
 
 function App() {
   // State
@@ -18,6 +19,9 @@ function App() {
   // setTimeout(() => {
   //   setAuth(true);
   // }, 3000);
+
+  // Así llamamos un HOOKS propio
+  useCart();
 
   const initialCart = () => {
     const localStorageCart = localStorage.getItem("cart");
