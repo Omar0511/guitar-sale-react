@@ -20,7 +20,7 @@ function App() {
   // }, 3000);
 
   const initialCart = () => {
-    const localStorageCart = localStorage.getItem("cart");
+    const localStorageCart = localStorage.getItem('cart');
     return localStorageCart ? JSON.parse(localStorageCart) : [];
   };
 
