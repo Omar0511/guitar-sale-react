@@ -191,6 +191,10 @@
 - Simplifica los _TEMPLATES_.
 - Es un _HOOKS_ enfocado al _performance_.
 
+### NOTAS
+
+- Se creo una nueva rama para crear un _HOOK_ propio
+
 ## SITIO
 
 - (https://guitarras-store.netlify.app/)
