@@ -21,7 +21,10 @@ function App() {
   // }, 3000);
 
   // Así llamamos un HOOKS propio
-  useCart();
+  // useCart();
+
+  const { auth, carrito} = useCart();
+  console.log(auth, carrito);
 
   const initialCart = () => {
     const localStorageCart = localStorage.getItem("cart");
