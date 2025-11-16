@@ -8,14 +8,15 @@ type Guitar = {
   price: number;
 };
 
-// type GuitarProps = {
-//     guitar : Guitar, 
-//     addToCart : (item: Guitar) => void
-// }
+type GuitarProps = {
+    guitar : Guitar, 
+    addToCart : (item: Guitar) => void
+}
 
-// export default function Guitar({guitar, addToCart} : GuitarProps) {
 // Void se usa cuando una funcion no retorna nada
-export default function Guitar({ guitar, addToCart }: {guitar : Guitar, addToCart: (item: Guitar) => void}) {
+// export default function Guitar({ guitar, addToCart }: {guitar : Guitar, addToCart: (item: Guitar) => void}) {
+export default function Guitar({ guitar, addToCart }: GuitarProps) {
+    
   const { name, image, description, price } = guitar;
 
   return (
