@@ -1,4 +1,22 @@
-import type { Guitar } from '../types'
+// Creando un TYPES
+type Guitar = {
+  id: number
+  name: string
+  image: string
+  description: string
+  price: number
+};
+
+// INTERFACES
+// interface Guitar = {
+//   id: number;
+//   name: string;
+//   image: string;
+//   description: string;
+//   price: number;
+// };
+
+// import type { Guitar } from '../types'
 
 export const db : Guitar[] = [
     {

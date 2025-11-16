@@ -249,7 +249,11 @@
     - **undefined**
   - En el caso de _arrays_ hay una sintaxis especial para crearlos.
 
-  
+  ### INTERFACES
+
+  - 2 de las caracter+isticas que más vas a utilizar en _TypeScript_ son _TYpes_ e _Interfaces_.
+  - Ambas pueden ser utilizadas de forma intercambiable, hay muy pocas diferencias entre ambos y en la comunidad vas a encontrar ejemplos con ambos.
+  - Es una forma de crear una estructura o agrupar propiedades de un objeto.
 
 ### NOTAS
 
