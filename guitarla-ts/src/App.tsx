@@ -1,10 +1,11 @@
+import { useState } from "react"
 import Guitar from "./components/Guitar"
 import Header from "./components/Header"
 import { useCart } from './hooks/useCart'
 
 function App() {
 
-  const { data, cart, addToCart, removeFromCart, decreaseQuantity, increaseQuantity, clearCart, isEmpty, cartTotal } = useCart()
+  const { data, cart, addToCart, removeFromCart, decreaseQuantity, increaseQuantity, clearCart, isEmpty, cartTotal } = useCart();
 
   return (
     <>

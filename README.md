@@ -238,6 +238,19 @@
 - _React_ y _Vite_ incluyen soporte a _TypeScript_ lo que ayuda bastante en el desarrollo de proyectos, y una vez listo podemos construir el proyecto, se compila a JavaScript y se puede acceder a él.
 - Y hoy en día _TypeScript_ se ha convertido en un estándar para crear aplicaciones: _React, Angular y Vue,js_. En una entrevista de trabajo estarás muy por delante de otros _Devs_.
 
+  ### PRIMITIVE
+
+  - Los _PRIMITIVE TYPES_ son los tipos de datos que soporta _TypeScript_ de forma nativa.
+  - Estos son:
+    - **numbers**
+    - **string**
+    - **boolean**
+    - **null**
+    - **undefined**
+  - En el caso de _arrays_ hay una sintaxis especial para crearlos.
+
+  
+
 ### NOTAS
 
 - En la carpeta de:
