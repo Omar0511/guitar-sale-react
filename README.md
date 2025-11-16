@@ -237,6 +237,13 @@
 - Una vez que se ha escrito elc código _TypeScript_, este se compila a _JavaScript_.
 - _React_ y _Vite_ incluyen soporte a _TypeScript_ lo que ayuda bastante en el desarrollo de proyectos, y una vez listo podemos construir el proyecto, se compila a JavaScript y se puede acceder a él.
 - Y hoy en día _TypeScript_ se ha convertido en un estándar para crear aplicaciones: _React, Angular y Vue,js_. En una entrevista de trabajo estarás muy por delante de otros _Devs_.
+
+### NOTAS
+
+- En la carpeta de:
+  - _public_
+- Eliminamos:
+  - **vite.svg**
 - 
 
 ## SITIO
