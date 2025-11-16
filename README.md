@@ -8,6 +8,7 @@
 - Node.js (20.19.0)
 - Vite
 - TailwindCSS
+- TypeScript
 
 ## Creación del proyecto
 
@@ -17,7 +18,7 @@
 - Al ejecutar el comando, nos aparecerá lo siguiente:
   - _Project name:_ **NombreProyecto**
   - _Select a framework:_ **Seleccionamos el FRAMEWORK con el teclado, aparecerá puntos o flechas, elegimos: _REACT_**
-  - _Select a variant:_ **Seleccionamos para este proyecto: _JavaScript + SWC_**
+  - _Select a variant:_ **Seleccionamos para este proyecto: _TypeScript + SWC_**
   - _Use rolldown-vite (Experimental)?:_ **No**
   - _Install with npm and start now?_ **Yes**
 - Después de terminar la configuración, nos aparece la _URL_ de cómo debemos abrirla en el navegador
@@ -218,9 +219,21 @@
 - Simplifica los _TEMPLATES_.
 - Es un _HOOKS_ enfocado al _performance_.
 
-### NOTAS
+### TYPESCRIPT
 
-- Se creo una nueva rama para crear un _HOOK_ propio
+- En esta rama agregamos
+  - _Typescript_
+- _TypeScript_ es un lenguaje de programación de código abierto desarrollado y mantenido por _Microsoft_. Es un superconjunto tipado de _JavaScript_, lo que significa que cualquier código _JavaScript_ válido también es código _TypeScript_ válido.
+- La principal característica de _TypeScript_ es que agrega un sistema de tipos estático a _JavaScript_, lo que permite detecta errores y proporcionar herramientas de desarrollo más s+olidos.
+
+  ## VENTAJAS
+
+  - El sistema de tipos de _TypeScript_ permite al proramador especificar los tipos de variables, parámetros de función, valores de retorno y más. Esto brinda la capacidad de realizar comprobaciones de tipos durante la compilación y detectar posibles erorres antes de que el código se ejecute.
+
+- Una vez que se ha escrito elc código _TypeScript_, este se compila a _JavaScript_.
+- _React_ y _Vite_ incluyen soporte a _TypeScript_ lo que ayuda bastante en el desarrollo de proyectos, y una vez listo podemos construir el proyecto, se compila a JavaScript y se puede acceder a él.
+- Y hoy en día _TypeScript_ se ha convertido en un estándar para crear aplicaciones: _React, Angular y Vue,js_. En una entrevista de trabajo estarás muy por delante de otros _Devs_.
+- 
 
 ## SITIO
 
