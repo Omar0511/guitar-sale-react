@@ -23,6 +23,10 @@
   - _Install with npm and start now?_ **Yes**
 - Después de terminar la configuración, nos aparece la _URL_ de cómo debemos abrirla en el navegador
   - _http://localhost:5173/_
+- En caso que no aparezca, nos movemos a la carpeta del proyecto
+  - **cd nombreProyecto**
+- Y ejecutamos:
+  - **npm i**
 - Ya una vez creado el proyecto y terminando la configuración inicial, limpiamos el contenido de los archivos:
   - **_App.jsx_**
   - **_main.jsx_** -> aquí solo realizamos unos pequeños ajustes
