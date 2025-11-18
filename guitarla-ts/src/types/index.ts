@@ -39,3 +39,6 @@ export type CartItem = Guitar & {
 //   quantity: number
 // } 
 // OMIT: es lo contrario, los elementos que ingreses los quitará y agregará los demás
+
+// Con esto decimos que solo queremos usar el ID
+// export type GuitarId = Gutar['id'];
