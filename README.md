@@ -261,7 +261,13 @@
   - _public_
 - Eliminamos:
   - **vite.svg**
-- 
+- En _Netlify_, tenemos 2 formas de subir el proyecto, se agregan 2 comandos para que corra el proyecto, uno de ellos es:
+  - **npm run build**
+- Va en una de las líneas de _Netlify_
+- La otra es que cuando ejecutamos:
+  - **npm run build**
+- Subimos la carpeta de:
+  - **dist**
 
 ## SITIO
 

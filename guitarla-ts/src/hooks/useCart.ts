@@ -4,16 +4,16 @@ import type { Guitar, CartItem } from '../types'
 
 export const useCart = () => {
 
-    // const initialCart = () : CartItem[] => {
-    //     const localStorageCart = localStorage.getItem('cart')
-    //     return localStorageCart ? JSON.parse(localStorageCart) : []
-    // }
-
-    // Agregamos el NUEVO TYPE a nuestro código
-    const initialCart = () : Guitar[] => {
+    const initialCart = () : CartItem[] => {
         const localStorageCart = localStorage.getItem('cart')
         return localStorageCart ? JSON.parse(localStorageCart) : []
     }
+
+    // Agregamos el NUEVO TYPE a nuestro código
+    // const initialCart = () : Guitar[] => {
+    //     const localStorageCart = localStorage.getItem('cart')
+    //     return localStorageCart ? JSON.parse(localStorageCart) : []
+    // }
 
     const [data] = useState(db)
     const [cart, setCart] = useState(initialCart)
