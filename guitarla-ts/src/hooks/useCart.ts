@@ -9,6 +9,7 @@ export const useCart = () => {
     //     return localStorageCart ? JSON.parse(localStorageCart) : []
     // }
 
+    // Agregamos el NUEVO TYPE a nuestro código
     const initialCart = () : Guitar[] => {
         const localStorageCart = localStorage.getItem('cart')
         return localStorageCart ? JSON.parse(localStorageCart) : []
