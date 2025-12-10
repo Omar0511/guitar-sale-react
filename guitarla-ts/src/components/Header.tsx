@@ -23,8 +23,10 @@ export default function Header({
   // isEmpty,
   // cartTotal,
 }: HeaderProps) {
+    
   // State Derivado
   const isEmpty = useMemo(() => cart.length === 0, [cart]);
+
   const cartTotal = useMemo(
     () => cart.reduce((total, item) => total + item.quantity * item.price, 0),
     [cart]
