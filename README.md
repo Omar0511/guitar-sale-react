@@ -270,6 +270,12 @@
 - Subimos la carpeta de:
   - **dist**
 
+## USEREDUCER
+
+- En esta rama se agrega la parte de:
+  - _useReducer_
+- 
+
 ## SITIO
 
 - (https://guitarras-store.netlify.app/)
