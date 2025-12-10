@@ -9,6 +9,7 @@
 - Vite
 - TailwindCSS
 - TypeScript
+- useReducer
 
 ## Creación del proyecto
 
