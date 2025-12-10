@@ -80,8 +80,13 @@ export const cartReducer = (
   }
 
   if (action.type === "remove-from-cart") {
+    // setCart((prevCart) => prevCart.filter((guitar) => guitar.id !== id));
+
+    const updatedCart = state.cart.filter(item => item.id !== action.payload.id);
+
     return {
       ...state,
+      cart: updatedCart
     };
   }
 

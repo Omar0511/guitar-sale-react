@@ -16,7 +16,8 @@ function App() {
       <Header 
         // cart={cart}
         cart={state.cart}
-        removeFromCart={removeFromCart}
+        // removeFromCart={removeFromCart}
+        dispatch={dispatch}
         decreaseQuantity={decreaseQuantity}
         increaseQuantity={increaseQuantity}
         clearCart={clearCart}
