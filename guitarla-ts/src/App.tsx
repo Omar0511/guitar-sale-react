@@ -20,7 +20,7 @@ function App() {
         dispatch={dispatch}
         // decreaseQuantity={decreaseQuantity}
         // increaseQuantity={increaseQuantity}
-        clearCart={clearCart}
+        // clearCart={clearCart}
         // isEmpty={isEmpty}
         // cartTotal={cartTotal}
       />

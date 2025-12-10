@@ -8,7 +8,7 @@ type HeaderProps = {
   dispatch: Dispatch<CartActions>
   // decreaseQuantity: (id: Guitar["id"]) => void;
   // increaseQuantity: (id: Guitar["id"]) => void;
-  clearCart: () => void;
+  // clearCart: () => void;
   // isEmpty: boolean;
   // cartTotal: number;
 };
@@ -19,7 +19,7 @@ export default function Header({
   dispatch,
   // decreaseQuantity,
   // increaseQuantity,
-  clearCart,
+  // clearCart,
   // isEmpty,
   // cartTotal,
 }: HeaderProps) {
@@ -120,7 +120,8 @@ export default function Header({
 
                 <button
                   className="btn btn-dark w-100 mt-3 p-2"
-                  onClick={clearCart}
+                  // onClick={clearCart}
+                  onClick={() => dispatch({type: 'clear-cart'})}
                 >
                   Vaciar Carrito
                 </button>

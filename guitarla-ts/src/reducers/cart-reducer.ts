@@ -122,9 +122,11 @@ export const cartReducer = (
   }
 
   if (action.type === "clear-cart") {
-    
+    // setCart([]);
+
     return {
       ...state,
+      cart: []
     };
   }
 };
