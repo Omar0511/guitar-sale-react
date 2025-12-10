@@ -14,13 +14,14 @@ function App() {
   return (
     <>
       <Header 
-        cart={cart}
+        // cart={cart}
+        cart={state.cart}
         removeFromCart={removeFromCart}
         decreaseQuantity={decreaseQuantity}
         increaseQuantity={increaseQuantity}
         clearCart={clearCart}
-        isEmpty={isEmpty}
-        cartTotal={cartTotal}
+        // isEmpty={isEmpty}
+        // cartTotal={cartTotal}
       />
       
       <main className="container-xl mt-5">
