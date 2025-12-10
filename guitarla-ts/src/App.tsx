@@ -18,7 +18,7 @@ function App() {
         cart={state.cart}
         // removeFromCart={removeFromCart}
         dispatch={dispatch}
-        decreaseQuantity={decreaseQuantity}
+        // decreaseQuantity={decreaseQuantity}
         // increaseQuantity={increaseQuantity}
         clearCart={clearCart}
         // isEmpty={isEmpty}
