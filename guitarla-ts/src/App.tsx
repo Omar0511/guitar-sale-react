@@ -6,9 +6,7 @@ import { cartReducer, initialState } from "./reducers/cart-reducer";
 
 function App() {
 
-  // const { data, cart, addToCart, removeFromCart, decreaseQuantity, increaseQuantity, clearCart, isEmpty, cartTotal } = useCart();
-  // const {cart, addToCart, removeFromCart, decreaseQuantity, increaseQuantity, clearCart, isEmpty, cartTotal } = useCart();
-  const {cart, removeFromCart, decreaseQuantity, increaseQuantity, clearCart, isEmpty, cartTotal } = useCart();
+  const { data, cart, addToCart, removeFromCart, decreaseQuantity, increaseQuantity, clearCart, isEmpty, cartTotal } = useCart();
 
   const [state, dispatch] = useReducer(cartReducer, initialState);
   // console.log(state);
@@ -56,6 +54,6 @@ function App() {
       </footer>
     </>
   )
-}
+};
 
-export default App
+export default App;
