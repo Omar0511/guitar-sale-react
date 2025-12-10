@@ -6,8 +6,8 @@ type HeaderProps = {
   cart: CartItem[];
   // removeFromCart: (id: Guitar["id"]) => void;
   dispatch: Dispatch<CartActions>
-  decreaseQuantity: (id: Guitar["id"]) => void;
-  increaseQuantity: (id: Guitar["id"]) => void;
+  // decreaseQuantity: (id: Guitar["id"]) => void;
+  // increaseQuantity: (id: Guitar["id"]) => void;
   clearCart: () => void;
   // isEmpty: boolean;
   // cartTotal: number;
@@ -17,8 +17,8 @@ export default function Header({
   cart,
   // removeFromCart,
   dispatch,
-  decreaseQuantity,
-  increaseQuantity,
+  // decreaseQuantity,
+  // increaseQuantity,
   clearCart,
   // isEmpty,
   // cartTotal,
@@ -82,7 +82,8 @@ export default function Header({
                               <button
                                 type="button"
                                 className="btn btn-dark"
-                                onClick={() => decreaseQuantity(guitar.id)}
+                                // onClick={() => decreaseQuantity(guitar.id)}
+                                onClick={() => dispatch({type: 'decrease-quantity', payload: {id: guitar.id}})}
                               >
                                 -
                               </button>
@@ -90,7 +91,8 @@ export default function Header({
                               <button
                                 type="button"
                                 className="btn btn-dark"
-                                onClick={() => increaseQuantity(guitar.id)}
+                                // onClick={() => increaseQuantity(guitar.id)}
+                                onClick={() => dispatch({type: 'increase-quantity', payload: {id: guitar.id}})}
                               >
                                 +
                               </button>
