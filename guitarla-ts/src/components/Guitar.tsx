@@ -1,4 +1,6 @@
 // import type { Guitar } from '../types'
+import { Dispatch } from "react";
+import type { CartActions } from "../reducers/cart-reducer";
 
 type Guitar = {
   id: number;
@@ -9,13 +11,15 @@ type Guitar = {
 };
 
 type GuitarProps = {
-    guitar : Guitar, 
-    addToCart : (item: Guitar) => void
-}
+  guitar: Guitar,
+  // addToCart : (item: Guitar) => void
+  dispatch: Dispatch<CartActions>
+};
 
 // Void se usa cuando una funcion no retorna nada
 // export default function Guitar({ guitar, addToCart }: {guitar : Guitar, addToCart: (item: Guitar) => void}) {
-export default function Guitar({ guitar, addToCart }: GuitarProps) {
+// export default function Guitar({ guitar, addToCart }: GuitarProps) {
+export default function Guitar({ guitar, dispatch }: GuitarProps) {
     
   const { name, image, description, price } = guitar;
 
@@ -35,7 +39,8 @@ export default function Guitar({ guitar, addToCart }: GuitarProps) {
         <button
           type="button"
           className="btn btn-dark w-100"
-          onClick={() => addToCart(guitar)}
+          // onClick={() => addToCart(guitar)}
+          onClick={() => dispatch({type: 'add-to-cart', payload: {item: guitar}})}
         >
           Agregar al Carrito
         </button>
